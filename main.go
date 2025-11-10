@@ -6,6 +6,8 @@ import (
 	"time"
 )
 
+// func unusedFunc() {} // ← 使用されていない公開関数（警告）
+
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		if r.Method != http.MethodGet {

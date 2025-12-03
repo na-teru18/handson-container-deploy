@@ -1,0 +1,26 @@
+name: Go Code Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  golangci-lint:
+    name: Run golangci-lint
+    runs-on: ubuntu-latest
+
+    steps:
+      # ソースコードのチェックアウト
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Go環境をセットアップ
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+
+      # ユニットテストをテスト実行
+      - name: Run tests
+        run: go test -v ./...

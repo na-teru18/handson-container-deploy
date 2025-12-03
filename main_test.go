@@ -70,7 +70,7 @@ func TestServer(t *testing.T) {
 
 func TestAdd(t *testing.T) {
 	result := Add(2, 3)
-	expected := 6 // ← これを6に変える
+	expected := 5 // ← これを6に変える
 
 	if result != expected {
 		t.Errorf("Add(2, 3) = %d; want %d", result, expected)

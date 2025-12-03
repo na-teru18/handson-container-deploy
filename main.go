@@ -10,6 +10,8 @@ import (
 // バージョン番号
 const version = "1.0"
 
+func unusedFunc() {}
+
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		if r.Method != http.MethodGet {

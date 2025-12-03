@@ -67,3 +67,12 @@ func TestServer(t *testing.T) {
 		t.Errorf("期待値と異なります: got %s", string(body))
 	}
 }
+
+func TestAdd(t *testing.T) {
+	result := Add(2, 3)
+	expected := 5 // ← これを6に変える
+
+	if result != expected {
+		t.Errorf("Add(2, 3) = %d; want %d", result, expected)
+	}
+}

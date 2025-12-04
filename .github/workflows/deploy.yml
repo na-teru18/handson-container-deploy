@@ -1,4 +1,4 @@
-name: Build and Deploy to ECS
+name: Build and Deploy to ECS(AWS Resource)
 
 on:
   push:
@@ -52,4 +52,3 @@ jobs:
           service: ${{ env.ECS_SERVICE }}
           cluster: ${{ env.ECS_CLUSTER }}
           wait-for-service-stability: true
-# AWS側のエラーを修正しました。

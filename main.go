@@ -10,6 +10,13 @@ import (
 // バージョン番号
 const version = "1.0"
 
+// func unusedFunc() {}
+
+// Go言語では、通常、ファイル内で使われる補助的な関数を main 関数よりも先に定義するため、main 関数の直前に記述
+func Add(a, b int) int {
+	return a + b
+}
+
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		if r.Method != http.MethodGet {

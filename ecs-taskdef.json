@@ -1,0 +1,16 @@
+{
+  "requiresCompatibilities": ["FARGATE"],
+  "family": "my-ecs-task",
+  "containerDefinitions": [
+    {
+      "name": "my-web-app",
+      "image": "339712998817.dkr.ecr.ap-northeast-1.amazonaws.com/test-repository:latest",
+      "essential": true
+    }
+  ],
+  "volumes": [],
+  "networkMode": "awsvpc",
+  "memory": "0.5 GB",
+  "cpu": "0.25 vCPU",
+  "executionRoleArn": "arn:aws:iam::339712998817:role/ecsTaskExecutionRole"
+}

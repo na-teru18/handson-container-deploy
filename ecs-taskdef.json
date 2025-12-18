@@ -3,7 +3,7 @@
   "family": "my-ecs-task",
   "containerDefinitions": [
     {
-      "name": "my-web-app",
+      "name": "test-container",
       "image": "339712998817.dkr.ecr.ap-northeast-1.amazonaws.com/test-repository:latest",
       "essential": true
     }

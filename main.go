@@ -8,7 +8,7 @@ import (
 )
 
 // バージョン番号
-const version = "3.0"
+const version = "4.0"
 
 // func unusedFunc() {}
 
